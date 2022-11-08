@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>In Class</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <!-- add bootstrap link here -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <h1>
+      Pixby Image Search
+    </h1>
+
+    <br>
+
+    <input type="text" id="searchBox" placeholder="Search for images">
+    <div id="errorMessages"></div>
+
+    <br>
+
+    <section id="layoutOptions">
+      Layout:
+      <input type="radio" name="orientation" id="vertical" value="vertical">
+      <label for="vertical">Vertical</label>
+      <input type="radio" name="orientation" id="horizontal" value="horizontal">
+      <label for="horizontal">Horizontal</label>
+    </section>
+
+    <br>
+
+    <!-- button with bootstrap -->
+    <button type="button" class="btn btn-primary" id="searchButton">Search</button>
+
+  </header>
+
+  <section id="container">
+    <div class="flex-container">
+      <figure>
+        <div>
+          <figcaption id="caption0"></figcaption>
+        </div>
+        <div id="image0"></div>
+      </figure>
+
+      <figure>
+        <div>
+          <figcaption id="caption1"></figcaption>
+        </div>
+        <div id="image1"></div>
+      </figure>
+
+      <figure>
+        <div>
+          <figcaption id="caption2"></figcaption>
+        </div>
+        <div id="image2"></div>
+      </figure>
+
+      <figure>
+        <div>
+          <figcaption id="caption3"></figcaption>
+        </div>
+        <div id="image3"></div>
+      </figure>
+
+      <figure>
+        <div>
+          <figcaption id="caption4"></figcaption>
+        </div>
+        <div id="image4"></div>
+      </figure>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

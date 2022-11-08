@@ -1,0 +1,67 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding-bottom: 100px;
+}
+#searchBox{
+  background-color: black;
+}
+header{
+  /* the background of the header must be grey but slightly transparent */
+  background-color: rgba(0,0,0,0.60);
+  height: 35%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  text-align: center;
+  padding: 50px 0px 30px 0px;
+  color: white;
+}
+#layoutOptions{
+  padding: 5px 0px 5px 0px;
+}
+
+.flex-container{
+/*this container contains 5 divs. i want to be able to display them horizonatally from each other with a white background */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: absolute;
+  top: 50%;
+}
+.flex-container div{
+  border-radius: 10px;
+  padding: 10px 10px 5px 10px;
+  height: auto;
+  width: auto;
+  background-color: white;
+}
+figcaption{
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  caption-side: top;
+}
+#errorMessages{
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* .flex-container{
+  this container contains 5 divs. i want to be able to display them horizonatally from each other with a white background 
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  top: 50%;
+  }
+  .flex-container img{
+    border-radius: 10px;
+    text-align: center;
+  
+  } */
